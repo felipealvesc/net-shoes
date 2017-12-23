@@ -1,0 +1,153 @@
+/* line 29, ../scss/reset.scss */
+p,
+a,
+a:focus,
+em,
+i,
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+video,
+img,
+caption,
+audio,
+ul,
+li,
+ol,
+article,
+table,
+thead,
+tbody,
+th,
+tr,
+td,
+input {
+  font-weight: normal;
+  font-size: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  outline: none;
+}
+
+/* line 43, ../scss/reset.scss */
+ul,
+li,
+ol,
+dt,
+dl {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 3, ../scss/main.scss */
+.container {
+  text-align: center;
+}
+/* line 5, ../scss/main.scss */
+.container .shelf-content-itens {
+  width: 900px;
+  display: inline-block;
+}
+/* line 8, ../scss/main.scss */
+.container .shelf-content-itens .shelf-itens {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 190px;
+  text-align: center;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  margin: 20px;
+}
+/* line 20, ../scss/main.scss */
+.container .shelf-content-itens .shelf-itens img {
+  display: inline-block;
+}
+/* line 23, ../scss/main.scss */
+.container .shelf-content-itens .shelf-itens .descricao {
+  display: inline-block;
+  font-size: 12px;
+  width: 180px;
+  padding: 15px 0;
+}
+/* line 29, ../scss/main.scss */
+.container .shelf-content-itens .shelf-itens .parcelas {
+  width: 100%;
+  display: block;
+  padding: 5px;
+  font-size: 10px;
+  color: #9E9E9E;
+}
+/* line 36, ../scss/main.scss */
+.container .shelf-content-itens .shelf-itens .comprar {
+  background: #F30;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5em;
+}
+/* line 48, ../scss/main.scss */
+.container .carrinho {
+  position: fixed;
+  right: -350px;
+  top: 0;
+  width: 348px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 15px;
+  background-color: #3a3a3a;
+  z-index: 9999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -moz-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 64, ../scss/main.scss */
+.container .cart-fixed {
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+/* line 68, ../scss/main.scss */
+.container .close-carrinho {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+/* line 72, ../scss/main.scss */
+.container .close-carrinho .close-cart {
+  float: right;
+  left: 670px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  width: 361px;
+  right: 0;
+  left: -205px;
+}
+/* line 84, ../scss/main.scss */
+.container .close-carrinho .open-cart {
+  position: absolute;
+}
+/* line 87, ../scss/main.scss */
+.container .close-carrinho .close-fixed {
+  display: block;
+}

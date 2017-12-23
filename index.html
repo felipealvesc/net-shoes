@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Loja</title>
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<script id="template" type="x-tmpl-mustache">
+				<ul class="shelf-content-itens">				
+				{{#products}}
+					<li class="shelf-itens" data-product-id="{{id}}"  data-sku-id="{{sku}}">
+						<img class="image" src="img/{{id}}.png"/>
+						<span class="descricao">{{title}}</span>
+						<div class="price">
+							<span class="moeda">{{currencyFormat}}</span>
+							<span class="valor" data-price="{{price}}">{{price}}</span>
+						</div>
+						<div class="parcelas">
+						<span>ou</span>
+						<span class="parcela">{{installments}}</span>
+						<span>de</span>
+						<span class="totalParcela">{{#calc}}{{price}}%%%{{installments}}{{/calc}}</span>
+						</div>
+						<a class="comprar" data-product-id="{{id}}"  data-sku-id="{{sku}}" href="#">Comprar
+						</a>
+					</li>
+				{{/products}}
+				</ul>	
+
+
+	</script>
+
+	<script id="templateCart" type="x-tmpl-mustache">
+		<ul class="shelf-content-cart">				
+		{{#carrinho}}
+			<li class="shelf-itens-cart" data-product-id="{{id}}" data-sku-id="{{skuId}}" id="{{skuId}}">
+				<a class="removeItem">(Remover)</a>	
+				<span class="quantidade">Quantidade{{qtde}}</span>
+				<img class="image" src="{{image}}"/>
+				<span class="descricao">{{descricao}}</span>
+			</li>
+		{{/carrinho}}
+		</ul>	
+	</script>
+	
+	<div class="container">
+		
+		<div class="shelf-content">
+		</div>	
+		<div class="carrinho">
+		</div>
+		<div class="close-carrinho">
+			<span class="open-cart">Abrir Carrinho</span>
+			<span class="close-cart">x</span>
+		</div>	 
+
+	</div>
+	<script src="jq/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="jq/mustache.min.js"></script>
+    
+</body>
+</html>
